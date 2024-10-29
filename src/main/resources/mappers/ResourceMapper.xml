@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ssafy.test.resource.model.mapper.ResourceMapper">
+    <select id="getResourceList" resultType="com.ssafy.test.resource.model.ResourceDto">
+        SELECT resource_id AS id, resource_name AS name
+        FROM resources
+    </select>
+</mapper>
